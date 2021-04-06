@@ -10680,7 +10680,8 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
  ========================================= */
 
 .login-block {
-	margin: 30px auto;
+	background-image: linear-gradient(rgb(224 124 29) 180px, rgb(233 115 37 / 0%) 0%);
+	
 }
 
 .login-block .auth-box {
@@ -14314,6 +14315,17 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
 .fixed-button.active {
 	bottom: 50px;
 	opacity: 1
+}
+
+
+.text-benimki{
+	color:#fab157;
+}
+
+
+.btn-benimki {
+	background-color: #fab157;
+	border-color: #ffffff00;
 }
 
 @-webkit-keyframes pulse {
