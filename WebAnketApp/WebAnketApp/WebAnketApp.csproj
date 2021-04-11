@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="DefaultDeneme.aspx" />
     <Content Include="LoginPageaspx.aspx" />
     <Content Include="tasarim\accordion.html" />
     <Content Include="tasarim\assets\css\animate.css\css\animate.css" />
@@ -260,6 +261,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultDeneme.aspx.cs">
+      <DependentUpon>DefaultDeneme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultDeneme.aspx.designer.cs">
+      <DependentUpon>DefaultDeneme.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPageaspx.aspx.cs">
       <DependentUpon>LoginPageaspx.aspx</DependentUpon>

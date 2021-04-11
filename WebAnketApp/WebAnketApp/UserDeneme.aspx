@@ -64,27 +64,33 @@
 				<div class="profile-userbuttons">
 					<button type="button" class="btn btn-success btn-sm">Follow</button>
 					<button type="button" class="btn btn-danger btn-sm">Message</button>
+					
 				</div>
 				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
 				<div class="profile-usermenu">
 					<ul class="">
-						<li class="active">
+						<li class="active mb-2">
 							<a href="#">
 							<i class="glyphicon glyphicon-home"></i>
 							Overview </a>
+							<br/>
 						</li>
-						<li>
+						
+							<li class="mb-2">
 							<a href="#">
 							<i class="glyphicon glyphicon-user"></i>
 							Account Settings </a>
 						</li>
-						<li>
+						
+
+							<li class="mb-2">
 							<a href="#" target="_blank">
 							<i class="glyphicon glyphicon-ok"></i>
 							Tasks </a>
 						</li>
-						<li>
+						
+							<li class="mb-2">
 							<a href="#">
 							<i class="glyphicon glyphicon-flag"></i>
 							Help </a>
@@ -99,20 +105,40 @@
 			   <div class="row">
 				   <div class="col-md-12">
 					   <div class="card bg-c-orenge">
-						   <div class="card-header"> ANKETLER </div>
+						   <div class="card-header text-center" style="font-weight:bold" > - YAYINLANAN ANKETLER - </div>
 
 					   </div>
 				   </div>
 			   </div>
 				<div class="row">
 				   <div class="col-md-6">
-					   <div class="card bg-c-orenge">
-						   <div class="card-header"> ANKETLER </div>
+					   <div class="card bg-c-red">
+						   <div class="card-header"> ANKET1 </div>
 					   </div>
 				   </div>
 					<div class="col-md-6">
-					   <div class="card bg-c-pink">
-						   <div class="card-header"> ANKETLER </div>
+					   <div class="card bg-c-blue">
+						   <div class="card-header"> ANKET2 </div>
+					   </div>
+				   </div>
+					<div class="col-md-6">
+					   <div class="card bg-c-green">
+						   <div class="card-header"> ANKET3 </div>
+					   </div>
+				   </div>
+					<div class="col-md-6">
+					   <div class="card bg-c-yellow">
+						   <div class="card-header"> ANKET4 </div>
+					   </div>
+				   </div>
+					<div class="col-md-6">
+					   <div class="card bg-c-black">
+						   <div class="card-header"> ANKET5 </div>
+					   </div>
+				   </div>
+					<div class="col-md-6">
+					   <div class="card bg-c-purple">
+						   <div class="card-header"> ANKET6 </div>
 					   </div>
 				   </div>
 			   </div>
