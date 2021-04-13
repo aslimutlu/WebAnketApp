@@ -150,7 +150,7 @@
                                         <div class="media">
                                             <img class="d-flex align-self-center img-radius" src="tasarim/assets/images/avatar-2.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
-                                                <h5 class="notification-user">John Doe</h5>
+                                                <h5 class="notification-user">Aslı Mutlu</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
                                                 <span class="notification-time">30 minutes ago</span>
                                             </div>
@@ -181,33 +181,33 @@
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <img src="tasarim/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                    <span>John Doe</span>
+                                    <span>Aslı Mutlu</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
                                     <li class="waves-effect waves-light">
                                         <a href="#!">
-                                            <i class="ti-settings"></i> Settings
+                                            <i class="ti-settings"></i>Settings
                                         </a>
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <a href="user-profile.html">
-                                            <i class="ti-user"></i> Profile
+                                            <i class="ti-user"></i>Profile
                                         </a>
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <a href="email-inbox.html">
-                                            <i class="ti-email"></i> My Messages
+                                            <i class="ti-email"></i>My Messages
                                         </a>
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <a href="auth-lock-screen.html">
-                                            <i class="ti-lock"></i> Lock Screen
+                                            <i class="ti-lock"></i>Lock Screen
                                         </a>
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <a href="auth-normal-sign-in.html">
-                                            <i class="ti-layout-sidebar-left"></i> Logout
+                                            <i class="ti-layout-sidebar-left"></i>Logout
                                         </a>
                                     </li>
                                 </ul>
@@ -226,7 +226,7 @@
                                 <div class="main-menu-header">
                                     <img class="img-80 img-radius" src="tasarim/assets/images/avatar-4.jpg" alt="User-Profile-Image">
                                     <div class="user-details">
-                                        <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
+                                        <span id="more-details">Aslı Mutlu<i class="fa fa-caret-down"></i></span>
                                     </div>
                                 </div>
                                 <div class="main-menu-content">
@@ -412,14 +412,14 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Dashboard</h5>
-                                            <p class="m-b-0">Welcome to Material Able</p>
+                                            <h5 class="m-b-10">ANKETAPP ANASAYFA</h5>
+                                            <p class="m-b-0">Aklındakini Hemen Sorula!</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <ul class="breadcrumb">
                                             <li class="breadcrumb-item">
-                                                <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                                <a href="index.html"><i class="fa fa-home"></i></a>
                                             </li>
                                             <li class="breadcrumb-item"><a href="#!">Dashboard</a>
                                             </li>
@@ -432,356 +432,107 @@
                         <div class="pcoded-inner-content">
                             <!-- Main-body start -->
                             <div class="main-body">
-                                <div class="page-wrapper">
-                                    <!-- Page-body start -->
-                                    <div class="page-body">
-                                        <div class="row">
-                                            <!-- Material statustic card start -->
-                                            <div class="col-xl-4 col-md-12">
-                                                <div class="card mat-stat-card">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center b-b-default">
-                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                        <i class="far fa-user text-c-purple f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5>10K</h5>
-                                                                        <p class="text-muted m-b-0">Visitors</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6 p-b-20 p-t-20">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                        <i class="fas fa-volume-down text-c-green f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5>100%</h5>
-                                                                        <p class="text-muted m-b-0">Volume</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row align-items-center">
-                                                            <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                        <i class="far fa-file-alt text-c-red f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5>2000+</h5>
-                                                                        <p class="text-muted m-b-0">Files</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6 p-b-20 p-t-20">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                        <i class="far fa-envelope-open text-c-blue f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5>120</h5>
-                                                                        <p class="text-muted m-b-0">Mails</p>
-                                                                    </div>
-                                                                </div>
+                                <div class="card">
+                                    <div class="col-md-12"></div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <select class="custom-select" required>
+                                                <option value="">Kategori Seçin</option>
+                                                <option value="1">A</option>
+                                                <option value="2">B</option>
+                                                <option value="3">C</option>
+                                                <option value="3">D</option>
+                                                <option value="3">E</option>
+                                                <option value="3">F</option>
+                                            </select>
+                                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Anket Sorunuzu Girin</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-text">Anket Seçeneklerini Girin</span>
+                                            <input type="text" aria-label="1." class="form-control">
+                                            <input type="text" aria-label="2." class="form-control">
+                                            <input type="text" aria-label="3." class="form-control">
+                                            <input type="text" aria-label="4." class="form-control">
+                                        </div>
+                                        <input class="btn btn-benimki" type="submit" value="Paylaş">
+
+
+
+
+
+                                        <div id="styleSelector"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card">
+                                    <div class="row">
+
+
+                                        <div class="col-md-12"></div>
+                                        <div class="card-body">
+
+                                            <div class="col-md-12">
+                                                <div class="profile-content">
+                                                    <div class="row">
+                                                        <div class="col-md-12 ">
+                                                            <div class="card cart-benimki">
+                                                                <div class="card-header text-center" style="font-weight: bold">- OYLAMAYA AÇIK ANKETLER  - </div>
+
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="card bg-c-red">
+                                                                <div class="card-header">ANKET1 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ipsum nec elit convallis hendrerit vitae in risus. Aliquam pulvinar, lorem vitae placerat sodales, sem dui pretium lacus, sollicitudin ornare enim diam quis neque. Proin magna velit, semper quis justo varius, gravida mattis eros. Aliquam mauris sapien, gravida nec mollis a, blandit a quam. Vivamus maximus dui vel arcu bibendum, id pharetra velit eleifend. Fusce ut massa sit amet turpis maximus dictum. Donec condimentum pharetra arcu. Maecenas laoreet interdum leo non maximus.  </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="card bg-c-blue">
+                                                                <div class="card-header">ANKET2 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ipsum nec elit convallis hendrerit vitae in risus. Aliquam pulvinar, lorem vitae placerat sodales, sem dui pretium lacus, sollicitudin ornare enim diam quis neque. Proin magna velit, semper quis justo varius, gravida mattis eros. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="card bg-c-green">
+                                                                <div class="card-header">ANKET3 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ipsum nec elit convallis hendrerit vitae in risus. Aliquam pulvinar, lorem vitae placerat sodales, sem dui pretium lacus, sollicitudin ornare enim diam quis neque. Proin magna velit, semper quis justo varius, gravida mattis eros. Aliquam mauris sapien, gravida nec mollis a, blandit a quam. Vivamus maximus dui vel arcu bibendum, id pharetra velit eleifend. Fusce ut massa sit amet turpis maximus dictum. Donec condimentum pharetra arcu. Maecenas laoreet interdum leo non maximus. Donec efficitur venenatis leo in consequat. Nunc vitae eros arcu. Suspendisse sodales elementum neque, id semper metus mattis non. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="card bg-c-yellow">
+                                                                <div class="card-header">ANKET4 :Aliquam mauris sapien, gravida nec mollis a, blandit a quam. Vivamus maximus dui vel arcu bibendum, id pharetra velit eleifend. Fusce ut massa sit amet turpis maximus dictum. Donec condimentum pharetra arcu. Maecenas laoreet interdum leo non maximus. Donec efficitur venenatis leo in consequat. Nunc vitae eros arcu. Suspendisse sodales elementum neque, id semper metus mattis non.
+
+Vestibulum non dui nec ante laoreet finibus ut sagittis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer et enim tortor. Duis at interdum mi. Aliquam cursus lorem mauris, quis pretium nunc vestibulum eu. Aenean mi diam, ultrices ac varius eu, suscipit commodo nulla. Nullam varius molestie vestibulum. Proin vitae sodales quam. Vestibulum sem nisi, ornare at dui eget, ullamcorper efficitur augue.</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="card cart-benimki-grey">
+                                                                <div class="card-header">ANKET5 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="card bg-c-purple">
+                                                                <div class="card-header">ANKET6 </div>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4 col-md-12">
-                                                <div class="card mat-stat-card">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center b-b-default">
-                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                        <i class="fas fa-share-alt text-c-purple f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5>1000</h5>
-                                                                        <p class="text-muted m-b-0">Share</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6 p-b-20 p-t-20">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                        <i class="fas fa-sitemap text-c-green f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5>600</h5>
-                                                                        <p class="text-muted m-b-0">Network</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row align-items-center">
-                                                            <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                        <i class="fas fa-signal text-c-red f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5>350</h5>
-                                                                        <p class="text-muted m-b-0">Returns</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6 p-b-20 p-t-20">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                        <i class="fas fa-wifi text-c-blue f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5>100%</h5>
-                                                                        <p class="text-muted m-b-0">Connections</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4 col-md-12">
-                                                <div class="card mat-clr-stat-card text-white green ">
-                                                    <div class="card-block">
-                                                        <div class="row">
-                                                            <div class="col-3 text-center bg-c-green">
-                                                                <i class="fas fa-star mat-icon f-24"></i>
-                                                            </div>
-                                                            <div class="col-9 cst-cont">
-                                                                <h5>4000+</h5>
-                                                                <p class="m-b-0">Ratings Received</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card mat-clr-stat-card text-white blue">
-                                                    <div class="card-block">
-                                                        <div class="row">
-                                                            <div class="col-3 text-center bg-c-blue">
-                                                                <i class="fas fa-trophy mat-icon f-24"></i>
-                                                            </div>
-                                                            <div class="col-9 cst-cont">
-                                                                <h5>17</h5>
-                                                                <p class="m-b-0">Achievements</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Material statustic card end -->
-                                            <!-- order-visitor start -->
-
-
-                                            <!-- order-visitor end -->
-
-                                            <!--  sale analytics start -->
-                                            <div class="col-xl-6 col-md-12">
-                                                <div class="card table-card">
-                                                    <div class="card-header">
-                                                        <h5>Member’s performance</h5>
-                                                        <div class="card-header-right">
-                                                            <ul class="list-unstyled card-option">
-                                                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
-                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                                <li><i class="fa fa-minus minimize-card"></i></li>
-                                                                <li><i class="fa fa-refresh reload-card"></i></li>
-                                                                <li><i class="fa fa-trash close-card"></i></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-hover m-b-0 without-header">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="d-inline-block align-middle">
-                                                                                <img src="tasarim/assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                                <div class="d-inline-block">
-                                                                                    <h6>Shirley Hoe</h6>
-                                                                                    <p class="text-muted m-b-0">Sales executive , NY</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">
-                                                                            <h6 class="f-w-700">$78.001<i class="fas fa-level-down-alt text-c-red m-l-10"></i></h6>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="d-inline-block align-middle">
-                                                                                <img src="tasarim/assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                                <div class="d-inline-block">
-                                                                                    <h6>James Alexander</h6>
-                                                                                    <p class="text-muted m-b-0">Sales executive , EL</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">
-                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="d-inline-block align-middle">
-                                                                                <img src="tasarim/assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                                <div class="d-inline-block">
-                                                                                    <h6>Shirley Hoe</h6>
-                                                                                    <p class="text-muted m-b-0">Sales executive , NY</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">
-                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="d-inline-block align-middle">
-                                                                                <img src="tasarim/assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                                <div class="d-inline-block">
-                                                                                    <h6>Nick Xander</h6>
-                                                                                    <p class="text-muted m-b-0">Sales executive , EL</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">
-                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 col-md-12">
-                                                <div class="row">
-                                                    <!-- sale card start -->
-
-                                                    <div class="col-md-6">
-                                                        <div class="card text-center order-visitor-card">
-                                                            <div class="card-block">
-                                                                <h6 class="m-b-0">Total Subscription</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>7652</h4>
-                                                                <p class="m-b-0">48% From Last 24 Hours</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="card text-center order-visitor-card">
-                                                            <div class="card-block">
-                                                                <h6 class="m-b-0">Order Status</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-up m-r-15 text-c-green"></i>6325</h4>
-                                                                <p class="m-b-0">36% From Last 6 Months</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="card bg-c-red total-card">
-                                                            <div class="card-block">
-                                                                <div class="text-left">
-                                                                    <h4>489</h4>
-                                                                    <p class="m-0">Total Comment</p>
-                                                                </div>
-                                                                <span class="label bg-c-red value-badges">15%</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="card bg-c-green total-card">
-                                                            <div class="card-block">
-                                                                <div class="text-left">
-                                                                    <h4>$5782</h4>
-                                                                    <p class="m-0">Income Status</p>
-                                                                </div>
-                                                                <span class="label bg-c-green value-badges">20%</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="card text-center order-visitor-card">
-                                                            <div class="card-block">
-                                                                <h6 class="m-b-0">Unique Visitors</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>652</h4>
-                                                                <p class="m-b-0">36% From Last 6 Months</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="card text-center order-visitor-card">
-                                                            <div class="card-block">
-                                                                <h6 class="m-b-0">Monthly Earnings</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-up m-r-15 text-c-green"></i>5963</h4>
-                                                                <p class="m-b-0">36% From Last 6 Months</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- sale card end -->
-                                                </div>
-                                            </div>
-
-                                            <!--  sale analytics end -->
-
-                                            <!-- Project statustic start -->
-                                            <div class="col-xl-12">
-                                                <div class="card proj-progress-card">
-                                                    <div class="card-block">
-                                                        <div class="row">
-                                                            <div class="col-xl-3 col-md-6">
-                                                                <h6>Published Project</h6>
-                                                                <h5 class="m-b-30 f-w-700">532<span class="text-c-green m-l-10">+1.69%</span></h5>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar bg-c-red" style="width:25%"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3 col-md-6">
-                                                                <h6>Completed Task</h6>
-                                                                <h5 class="m-b-30 f-w-700">4,569<span class="text-c-red m-l-10">-0.5%</span></h5>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar bg-c-blue" style="width:65%"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3 col-md-6">
-                                                                <h6>Successfull Task</h6>
-                                                                <h5 class="m-b-30 f-w-700">89%<span class="text-c-green m-l-10">+0.99%</span></h5>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar bg-c-green" style="width:85%"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3 col-md-6">
-                                                                <h6>Ongoing Project</h6>
-                                                                <h5 class="m-b-30 f-w-700">365<span class="text-c-green m-l-10">+0.35%</span></h5>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar bg-c-yellow" style="width:45%"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Project statustic end -->
                                         </div>
                                     </div>
-                                    <!-- Page-body end -->
                                 </div>
-                                <div id="styleSelector"> </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
+                    <!-- Warning Section Starts -->
+                    <!-- Older IE warning message -->
+                    <!--[if lt IE 10]>
 <div class="ie-warning">
     <h1>Warning!!</h1>
     <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
@@ -822,25 +573,25 @@
     <p>Sorry for the inconvenience!</p>
 </div>
 <![endif]-->
-    <!-- Warning Section Ends -->
+                    <!-- Warning Section Ends -->
 
-    <!-- Required Jquery -->
-    <script type="text/javascript" src="tasarim/assets/js/jquery/jquery.min.js "></script>
-    <script type="text/javascript" src="tasarim/assets/js/jquery-ui/jquery-ui.min.js "></script>
-    <script type="text/javascript" src="tasarim/assets/js/popper.js/popper.min.js"></script>
-    <script type="text/javascript" src="tasarim/assets/js/bootstrap/js/bootstrap.min.js "></script>
-    <!-- waves js -->
-    <script src="tasarim/assets/pages/waves/js/waves.min.js"></script>
-    <!-- jquery slimscroll js -->
-    <script type="text/javascript" src="tasarim/assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+                    <!-- Required Jquery -->
+                    <script type="text/javascript" src="tasarim/assets/js/jquery/jquery.min.js "></script>
+                    <script type="text/javascript" src="tasarim/assets/js/jquery-ui/jquery-ui.min.js "></script>
+                    <script type="text/javascript" src="tasarim/assets/js/popper.js/popper.min.js"></script>
+                    <script type="text/javascript" src="tasarim/assets/js/bootstrap/js/bootstrap.min.js "></script>
+                    <!-- waves js -->
+                    <script src="tasarim/assets/pages/waves/js/waves.min.js"></script>
+                    <!-- jquery slimscroll js -->
+                    <script type="text/javascript" src="tasarim/assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-    <!-- slimscroll js -->
-    <script src="tasarim/assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+                    <!-- slimscroll js -->
+                    <script src="tasarim/assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
 
-    <!-- menu js -->
-    <script src="tasarim/assets/js/pcoded.min.js"></script>
-    <script src="tasarim/assets/js/vertical/vertical-layout.min.js "></script>
+                    <!-- menu js -->
+                    <script src="tasarim/assets/js/pcoded.min.js"></script>
+                    <script src="tasarim/assets/js/vertical/vertical-layout.min.js "></script>
 
-    <script type="text/javascript" src="tasarim/assets/js/script.js "></script>
+                    <script type="text/javascript" src="tasarim/assets/js/script.js "></script>
 </body>
 </html>

@@ -11,6 +11,9 @@ namespace WebAnketApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            var db = new WebAnketApp.DataAccess.Class1();
+            
+
 
         }
     }

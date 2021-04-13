@@ -251,7 +251,6 @@
     <Content Include="tasarim\tooltip.html" />
     <Content Include="tasarim\typography.html" />
     <Content Include="User.aspx" />
-    <Content Include="UserDeneme.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -283,13 +282,6 @@
     </Compile>
     <Compile Include="User.aspx.designer.cs">
       <DependentUpon>User.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserDeneme.aspx.cs">
-      <DependentUpon>UserDeneme.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserDeneme.aspx.designer.cs">
-      <DependentUpon>UserDeneme.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
