@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="DefaultDeneme.aspx" />
     <Content Include="LoginPageaspx.aspx" />
     <Content Include="tasarim\accordion.html" />
     <Content Include="tasarim\assets\css\animate.css\css\animate.css" />
@@ -261,13 +260,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DefaultDeneme.aspx.cs">
-      <DependentUpon>DefaultDeneme.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DefaultDeneme.aspx.designer.cs">
-      <DependentUpon>DefaultDeneme.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LoginPageaspx.aspx.cs">
       <DependentUpon>LoginPageaspx.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -341,6 +333,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebAnketApp.Business\WebAnketApp.Business.csproj">
+      <Project>{156cf5a5-6838-4319-aefb-62998437d5d2}</Project>
+      <Name>WebAnketApp.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAnketApp.DataAccess\WebAnketApp.DataAccess.csproj">
+      <Project>{2b0c2acb-16a9-43b6-838b-aceaf6c4b333}</Project>
+      <Name>WebAnketApp.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

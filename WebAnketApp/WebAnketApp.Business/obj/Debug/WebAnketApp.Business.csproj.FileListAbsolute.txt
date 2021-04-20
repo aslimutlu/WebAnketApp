@@ -1,0 +1,6 @@
+C:\Users\aslim\OneDrive\Belgeler\GitHub\Online-Anket-Platformu\WebAnketApp\WebAnketApp.Business\bin\Debug\WebAnketApp.Business.dll
+C:\Users\aslim\OneDrive\Belgeler\GitHub\Online-Anket-Platformu\WebAnketApp\WebAnketApp.Business\bin\Debug\WebAnketApp.Business.pdb
+C:\Users\aslim\OneDrive\Belgeler\GitHub\Online-Anket-Platformu\WebAnketApp\WebAnketApp.Business\obj\Debug\WebAnketApp.Business.csprojAssemblyReference.cache
+C:\Users\aslim\OneDrive\Belgeler\GitHub\Online-Anket-Platformu\WebAnketApp\WebAnketApp.Business\obj\Debug\WebAnketApp.Business.csproj.CoreCompileInputs.cache
+C:\Users\aslim\OneDrive\Belgeler\GitHub\Online-Anket-Platformu\WebAnketApp\WebAnketApp.Business\obj\Debug\WebAnketApp.Business.dll
+C:\Users\aslim\OneDrive\Belgeler\GitHub\Online-Anket-Platformu\WebAnketApp\WebAnketApp.Business\obj\Debug\WebAnketApp.Business.pdb
