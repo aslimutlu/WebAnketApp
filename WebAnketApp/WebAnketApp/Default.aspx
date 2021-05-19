@@ -42,7 +42,6 @@
     <form id="form1" runat="server">
         <div>
         </div>
-    </form>
     <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="loader-track">
@@ -355,6 +354,7 @@ Vestibulum non dui nec ante laoreet finibus ut sagittis diam. Class aptent tacit
                 <a href="http://www.google.com/chrome/">
                     <img src="tasarim/assets/images/browser/chrome.png" alt="Chrome">
                     <div>Chrome</div>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                 </a>
             </li>
             <li>
@@ -406,5 +406,6 @@ Vestibulum non dui nec ante laoreet finibus ut sagittis diam. Class aptent tacit
                     <script src="tasarim/assets/js/vertical/vertical-layout.min.js "></script>
 
                     <script type="text/javascript" src="tasarim/assets/js/script.js "></script>
-</body>
+    </form>
+    </body>
 </html>
