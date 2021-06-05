@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b490e34805e842d9b15dd72cca661f44" Name="Diagram1">
+        <EntityTypeShape EntityType="WebAnketAppModel.Anket" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAnketAppModel.Cevap" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAnketAppModel.Kategori" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAnketAppModel.Soru" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAnketAppModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAnketAppModel.Uyeler" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <AssociationConnector Association="WebAnketAppModel.FK_Anket_Cevap" ManuallyRouted="false" />
+        <AssociationConnector Association="WebAnketAppModel.FK_Anket_Kategori" ManuallyRouted="false" />
+        <AssociationConnector Association="WebAnketAppModel.FK_Anket_Soru" ManuallyRouted="false" />
+        <AssociationConnector Association="WebAnketAppModel.FK_Anket_Uyeler" ManuallyRouted="false" />
+        <AssociationConnector Association="WebAnketAppModel.FK_Cevap_Soru" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="WebAnketAppModel.buAnket" Width="1.5" PointX="6.25" PointY="1.25" />
+        <AssociationConnector Association="WebAnketAppModel.FK_buAnket_buAnket" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

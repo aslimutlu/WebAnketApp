@@ -1,0 +1,15 @@
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\WebAnketApp.Business.dll.config
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\WebAnketApp.Business.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\WebAnketApp.Business.pdb
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\EntityFramework.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\WebAnketApp.DataAccess.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\WebAnketApp.DataAccess.pdb
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\WebAnketApp.DataAccess.dll.config
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\EntityFramework.xml
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\obj\Debug\WebAnketApp.Business.csprojAssemblyReference.cache
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\obj\Debug\WebAnketApp.Business.csproj.CoreCompileInputs.cache
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\obj\Debug\WebAnketApp.Business.csproj.CopyComplete
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\obj\Debug\WebAnketApp.Business.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.Business\obj\Debug\WebAnketApp.Business.pdb

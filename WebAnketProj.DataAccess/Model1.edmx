@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WebAnketAppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Anket">
+          <Key>
+            <PropertyRef Name="anket_id" />
+          </Key>
+          <Property Name="anket_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kullanici_id_anket" Type="int" />
+          <Property Name="kategori_id_anket" Type="int" />
+          <Property Name="soru_id_anket" Type="int" />
+          <Property Name="cevap_id_anket" Type="int" />
+        </EntityType>
+        <EntityType Name="buAnket">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="kategori" Type="varchar" MaxLength="50" />
+          <Property Name="soru" Type="varchar" MaxLength="50" />
+          <Property Name="cevap1" Type="varchar" MaxLength="50" />
+          <Property Name="cevap2" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Cevap">
+          <Key>
+            <PropertyRef Name="cevap_id" />
+          </Key>
+          <Property Name="cevap_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="soru_id_cevap" Type="int" />
+          <Property Name="cevap" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Kategori">
+          <Key>
+            <PropertyRef Name="kategori_id" />
+          </Key>
+          <Property Name="kategori_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kategori_adi" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Soru">
+          <Key>
+            <PropertyRef Name="soru_id" />
+          </Key>
+          <Property Name="soru_id" Type="int" Nullable="false" />
+          <Property Name="soru_text" Type="varchar(max)" />
+          <Property Name="anket_id_soru" Type="int" />
+          <Property Name="secenekler_a_b_c_d" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Uyeler">
+          <Key>
+            <PropertyRef Name="kullanici_id" />
+          </Key>
+          <Property Name="kullanici_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kullanici_mail" Type="varchar" MaxLength="50" />
+          <Property Name="kullanici_sifre" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Anket_Cevap">
+          <End Role="Cevap" Type="Self.Cevap" Multiplicity="0..1" />
+          <End Role="Anket" Type="Self.Anket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cevap">
+              <PropertyRef Name="cevap_id" />
+            </Principal>
+            <Dependent Role="Anket">
+              <PropertyRef Name="cevap_id_anket" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anket_Kategori">
+          <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+          <End Role="Anket" Type="Self.Anket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategori">
+              <PropertyRef Name="kategori_id" />
+            </Principal>
+            <Dependent Role="Anket">
+              <PropertyRef Name="kategori_id_anket" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anket_Soru">
+          <End Role="Soru" Type="Self.Soru" Multiplicity="0..1" />
+          <End Role="Anket" Type="Self.Anket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Soru">
+              <PropertyRef Name="soru_id" />
+            </Principal>
+            <Dependent Role="Anket">
+              <PropertyRef Name="soru_id_anket" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anket_Uyeler">
+          <End Role="Uyeler" Type="Self.Uyeler" Multiplicity="0..1" />
+          <End Role="Anket" Type="Self.Anket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Uyeler">
+              <PropertyRef Name="kullanici_id" />
+            </Principal>
+            <Dependent Role="Anket">
+              <PropertyRef Name="kullanici_id_anket" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_buAnket_buAnket">
+          <End Role="buAnket" Type="Self.buAnket" Multiplicity="1" />
+          <End Role="buAnket1" Type="Self.buAnket" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="buAnket">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="buAnket1">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cevap_Soru">
+          <End Role="Soru" Type="Self.Soru" Multiplicity="0..1" />
+          <End Role="Cevap" Type="Self.Cevap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Soru">
+              <PropertyRef Name="soru_id" />
+            </Principal>
+            <Dependent Role="Cevap">
+              <PropertyRef Name="soru_id_cevap" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="WebAnketAppModelStoreContainer">
+          <EntitySet Name="Anket" EntityType="Self.Anket" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="buAnket" EntityType="Self.buAnket" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cevap" EntityType="Self.Cevap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kategori" EntityType="Self.Kategori" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Soru" EntityType="Self.Soru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Uyeler" EntityType="Self.Uyeler" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Anket_Cevap" Association="Self.FK_Anket_Cevap">
+            <End Role="Cevap" EntitySet="Cevap" />
+            <End Role="Anket" EntitySet="Anket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anket_Kategori" Association="Self.FK_Anket_Kategori">
+            <End Role="Kategori" EntitySet="Kategori" />
+            <End Role="Anket" EntitySet="Anket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anket_Soru" Association="Self.FK_Anket_Soru">
+            <End Role="Soru" EntitySet="Soru" />
+            <End Role="Anket" EntitySet="Anket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anket_Uyeler" Association="Self.FK_Anket_Uyeler">
+            <End Role="Uyeler" EntitySet="Uyeler" />
+            <End Role="Anket" EntitySet="Anket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_buAnket_buAnket" Association="Self.FK_buAnket_buAnket">
+            <End Role="buAnket" EntitySet="buAnket" />
+            <End Role="buAnket1" EntitySet="buAnket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cevap_Soru" Association="Self.FK_Cevap_Soru">
+            <End Role="Soru" EntitySet="Soru" />
+            <End Role="Cevap" EntitySet="Cevap" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WebAnketAppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Anket">
+          <Key>
+            <PropertyRef Name="anket_id" />
+          </Key>
+          <Property Name="anket_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kullanici_id_anket" Type="Int32" />
+          <Property Name="kategori_id_anket" Type="Int32" />
+          <Property Name="soru_id_anket" Type="Int32" />
+          <Property Name="cevap_id_anket" Type="Int32" />
+          <Property Name="yayin_durumu" Type="Boolean" />
+          <NavigationProperty Name="Cevap" Relationship="Self.FK_Anket_Cevap" FromRole="Anket" ToRole="Cevap" />
+          <NavigationProperty Name="Kategori" Relationship="Self.FK_Anket_Kategori" FromRole="Anket" ToRole="Kategori" />
+          <NavigationProperty Name="Soru" Relationship="Self.FK_Anket_Soru" FromRole="Anket" ToRole="Soru" />
+          <NavigationProperty Name="Uyeler" Relationship="Self.FK_Anket_Uyeler" FromRole="Anket" ToRole="Uyeler" />
+        </EntityType>
+        <EntityType Name="Cevap">
+          <Key>
+            <PropertyRef Name="cevap_id" />
+          </Key>
+          <Property Name="cevap_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="soru_id_cevap" Type="Int32" />
+          <Property Name="cevap1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Anket" Relationship="Self.FK_Anket_Cevap" FromRole="Cevap" ToRole="Anket" />
+          <NavigationProperty Name="Soru" Relationship="Self.FK_Cevap_Soru" FromRole="Cevap" ToRole="Soru" />
+        </EntityType>
+        <EntityType Name="Kategori">
+          <Key>
+            <PropertyRef Name="kategori_id" />
+          </Key>
+          <Property Name="kategori_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kategori_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Anket" Relationship="Self.FK_Anket_Kategori" FromRole="Kategori" ToRole="Anket" />
+        </EntityType>
+        <EntityType Name="Soru">
+          <Key>
+            <PropertyRef Name="soru_id" />
+          </Key>
+          <Property Name="soru_id" Type="Int32" Nullable="false" />
+          <Property Name="soru_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="anket_id_soru" Type="Int32" />
+          <Property Name="secenekler_a_b_c_d" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Anket" Relationship="Self.FK_Anket_Soru" FromRole="Soru" ToRole="Anket" />
+          <NavigationProperty Name="Cevap" Relationship="Self.FK_Cevap_Soru" FromRole="Soru" ToRole="Cevap" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Uyeler">
+          <Key>
+            <PropertyRef Name="kullanici_id" />
+          </Key>
+          <Property Name="kullanici_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kullanici_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="kullanici_sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Anket" Relationship="Self.FK_Anket_Uyeler" FromRole="Uyeler" ToRole="Anket" />
+        </EntityType>
+        <Association Name="FK_Anket_Cevap">
+          <End Role="Cevap" Type="Self.Cevap" Multiplicity="0..1" />
+          <End Role="Anket" Type="Self.Anket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cevap">
+              <PropertyRef Name="cevap_id" />
+            </Principal>
+            <Dependent Role="Anket">
+              <PropertyRef Name="cevap_id_anket" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anket_Kategori">
+          <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+          <End Role="Anket" Type="Self.Anket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategori">
+              <PropertyRef Name="kategori_id" />
+            </Principal>
+            <Dependent Role="Anket">
+              <PropertyRef Name="kategori_id_anket" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anket_Soru">
+          <End Role="Soru" Type="Self.Soru" Multiplicity="0..1" />
+          <End Role="Anket" Type="Self.Anket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Soru">
+              <PropertyRef Name="soru_id" />
+            </Principal>
+            <Dependent Role="Anket">
+              <PropertyRef Name="soru_id_anket" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anket_Uyeler">
+          <End Role="Uyeler" Type="Self.Uyeler" Multiplicity="0..1" />
+          <End Role="Anket" Type="Self.Anket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Uyeler">
+              <PropertyRef Name="kullanici_id" />
+            </Principal>
+            <Dependent Role="Anket">
+              <PropertyRef Name="kullanici_id_anket" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cevap_Soru">
+          <End Role="Soru" Type="Self.Soru" Multiplicity="0..1" />
+          <End Role="Cevap" Type="Self.Cevap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Soru">
+              <PropertyRef Name="soru_id" />
+            </Principal>
+            <Dependent Role="Cevap">
+              <PropertyRef Name="soru_id_cevap" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="WebAnketAppEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Anket" EntityType="Self.Anket" />
+          <EntitySet Name="Cevap" EntityType="Self.Cevap" />
+          <EntitySet Name="Kategori" EntityType="Self.Kategori" />
+          <EntitySet Name="Soru" EntityType="Self.Soru" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Uyeler" EntityType="Self.Uyeler" />
+          <AssociationSet Name="FK_Anket_Cevap" Association="Self.FK_Anket_Cevap">
+            <End Role="Cevap" EntitySet="Cevap" />
+            <End Role="Anket" EntitySet="Anket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anket_Kategori" Association="Self.FK_Anket_Kategori">
+            <End Role="Kategori" EntitySet="Kategori" />
+            <End Role="Anket" EntitySet="Anket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anket_Soru" Association="Self.FK_Anket_Soru">
+            <End Role="Soru" EntitySet="Soru" />
+            <End Role="Anket" EntitySet="Anket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anket_Uyeler" Association="Self.FK_Anket_Uyeler">
+            <End Role="Uyeler" EntitySet="Uyeler" />
+            <End Role="Anket" EntitySet="Anket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cevap_Soru" Association="Self.FK_Cevap_Soru">
+            <End Role="Soru" EntitySet="Soru" />
+            <End Role="Cevap" EntitySet="Cevap" />
+          </AssociationSet>
+          <EntitySet Name="buAnket" EntityType="WebAnketAppModel.buAnket" />
+          <AssociationSet Name="FK_buAnket_buAnket" Association="WebAnketAppModel.FK_buAnket_buAnket">
+            <End Role="buAnket" EntitySet="buAnket" />
+            <End Role="buAnket1" EntitySet="buAnket" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="buAnket">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="kategori" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="soru" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cevaplar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="buAnket1" Relationship="WebAnketAppModel.FK_buAnket_buAnket" FromRole="buAnket" ToRole="buAnket1" />
+          <Property Name="cevap1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cevap2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_buAnket_buAnket">
+          <End Type="WebAnketAppModel.buAnket" Role="buAnket" Multiplicity="1" />
+          <End Type="WebAnketAppModel.buAnket" Role="buAnket1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="buAnket">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="buAnket1">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WebAnketAppModelStoreContainer" CdmEntityContainer="WebAnketAppEntities">
+          <EntitySetMapping Name="Anket">
+            <EntityTypeMapping TypeName="WebAnketAppModel.Anket">
+              <MappingFragment StoreEntitySet="Anket">
+                <ScalarProperty Name="anket_id" ColumnName="anket_id" />
+                <ScalarProperty Name="kullanici_id_anket" ColumnName="kullanici_id_anket" />
+                <ScalarProperty Name="kategori_id_anket" ColumnName="kategori_id_anket" />
+                <ScalarProperty Name="soru_id_anket" ColumnName="soru_id_anket" />
+                <ScalarProperty Name="cevap_id_anket" ColumnName="cevap_id_anket" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cevap">
+            <EntityTypeMapping TypeName="WebAnketAppModel.Cevap">
+              <MappingFragment StoreEntitySet="Cevap">
+                <ScalarProperty Name="cevap_id" ColumnName="cevap_id" />
+                <ScalarProperty Name="soru_id_cevap" ColumnName="soru_id_cevap" />
+                <ScalarProperty Name="cevap1" ColumnName="cevap" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kategori">
+            <EntityTypeMapping TypeName="WebAnketAppModel.Kategori">
+              <MappingFragment StoreEntitySet="Kategori">
+                <ScalarProperty Name="kategori_id" ColumnName="kategori_id" />
+                <ScalarProperty Name="kategori_adi" ColumnName="kategori_adi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Soru">
+            <EntityTypeMapping TypeName="WebAnketAppModel.Soru">
+              <MappingFragment StoreEntitySet="Soru">
+                <ScalarProperty Name="soru_id" ColumnName="soru_id" />
+                <ScalarProperty Name="soru_text" ColumnName="soru_text" />
+                <ScalarProperty Name="anket_id_soru" ColumnName="anket_id_soru" />
+                <ScalarProperty Name="secenekler_a_b_c_d" ColumnName="secenekler_a_b_c_d" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="WebAnketAppModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Uyeler">
+            <EntityTypeMapping TypeName="WebAnketAppModel.Uyeler">
+              <MappingFragment StoreEntitySet="Uyeler">
+                <ScalarProperty Name="kullanici_id" ColumnName="kullanici_id" />
+                <ScalarProperty Name="kullanici_mail" ColumnName="kullanici_mail" />
+                <ScalarProperty Name="kullanici_sifre" ColumnName="kullanici_sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="buAnket">
+            <EntityTypeMapping TypeName="WebAnketAppModel.buAnket">
+              <MappingFragment StoreEntitySet="buAnket">
+                <ScalarProperty Name="cevap2" ColumnName="cevap2" />
+                <ScalarProperty Name="cevap1" ColumnName="cevap1" />
+                <ScalarProperty Name="soru" ColumnName="soru" />
+                <ScalarProperty Name="kategori" ColumnName="kategori" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

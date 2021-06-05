@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebAnketAppModelStoreContainer" CdmEntityContainer="WebAnketAppEntities">
+    <EntitySetMapping Name="Anket">
+      <EntityTypeMapping TypeName="WebAnketAppModel.Anket">
+        <MappingFragment StoreEntitySet="Anket">
+          <ScalarProperty Name="anket_id" ColumnName="anket_id" />
+          <ScalarProperty Name="kullanici_id_anket" ColumnName="kullanici_id_anket" />
+          <ScalarProperty Name="kategori_id_anket" ColumnName="kategori_id_anket" />
+          <ScalarProperty Name="soru_id_anket" ColumnName="soru_id_anket" />
+          <ScalarProperty Name="cevap_id_anket" ColumnName="cevap_id_anket" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cevap">
+      <EntityTypeMapping TypeName="WebAnketAppModel.Cevap">
+        <MappingFragment StoreEntitySet="Cevap">
+          <ScalarProperty Name="cevap_id" ColumnName="cevap_id" />
+          <ScalarProperty Name="soru_id_cevap" ColumnName="soru_id_cevap" />
+          <ScalarProperty Name="cevap1" ColumnName="cevap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="WebAnketAppModel.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="kategori_id" ColumnName="kategori_id" />
+          <ScalarProperty Name="kategori_adi" ColumnName="kategori_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Soru">
+      <EntityTypeMapping TypeName="WebAnketAppModel.Soru">
+        <MappingFragment StoreEntitySet="Soru">
+          <ScalarProperty Name="soru_id" ColumnName="soru_id" />
+          <ScalarProperty Name="soru_text" ColumnName="soru_text" />
+          <ScalarProperty Name="anket_id_soru" ColumnName="anket_id_soru" />
+          <ScalarProperty Name="secenekler_a_b_c_d" ColumnName="secenekler_a_b_c_d" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="WebAnketAppModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uyeler">
+      <EntityTypeMapping TypeName="WebAnketAppModel.Uyeler">
+        <MappingFragment StoreEntitySet="Uyeler">
+          <ScalarProperty Name="kullanici_id" ColumnName="kullanici_id" />
+          <ScalarProperty Name="kullanici_mail" ColumnName="kullanici_mail" />
+          <ScalarProperty Name="kullanici_sifre" ColumnName="kullanici_sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="buAnket">
+      <EntityTypeMapping TypeName="WebAnketAppModel.buAnket">
+        <MappingFragment StoreEntitySet="buAnket">
+          <ScalarProperty Name="cevap2" ColumnName="cevap2" />
+          <ScalarProperty Name="cevap1" ColumnName="cevap1" />
+          <ScalarProperty Name="soru" ColumnName="soru" />
+          <ScalarProperty Name="kategori" ColumnName="kategori" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

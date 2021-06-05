@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{681D2AAF-21AD-4B9F-9435-078812DAA383}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAnketProj</RootNamespace>
+    <AssemblyName>WebAnketProj</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44338</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="tasarim\accordion.html" />
+    <Content Include="tasarim\assets\css\animate.css\css\animate.css" />
+    <Content Include="tasarim\assets\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="tasarim\assets\css\chartist\chartist.css" />
+    <Content Include="tasarim\assets\css\component.css" />
+    <Content Include="tasarim\assets\css\font-awesome-n.min.css" />
+    <Content Include="tasarim\assets\css\font-awesome.min.css" />
+    <Content Include="tasarim\assets\css\ionicons.css" />
+    <Content Include="tasarim\assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="tasarim\assets\css\linearicons.css" />
+    <Content Include="tasarim\assets\css\morris.js\css\morris.css" />
+    <Content Include="tasarim\assets\css\simple-line-icons.css" />
+    <Content Include="tasarim\assets\css\style.css" />
+    <Content Include="tasarim\assets\css\style.min.css" />
+    <Content Include="tasarim\assets\icon\fa-brands-400.svg" />
+    <Content Include="tasarim\assets\icon\fa-regular-400.svg" />
+    <Content Include="tasarim\assets\icon\fa-solid-900.svg" />
+    <Content Include="tasarim\assets\icon\feather\css\feather.css" />
+    <Content Include="tasarim\assets\icon\feather\fonts\feather.svg" />
+    <Content Include="tasarim\assets\icon\font-awesome\css\font-awesome.css" />
+    <Content Include="tasarim\assets\icon\font-awesome\css\font-awesome.min.css" />
+    <Content Include="tasarim\assets\icon\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="tasarim\assets\icon\fontawesome-webfont.svg" />
+    <Content Include="tasarim\assets\icon\icofont\css\icofont.css" />
+    <Content Include="tasarim\assets\icon\ionicons.svg" />
+    <Content Include="tasarim\assets\icon\Linearicons-Free.svg" />
+    <Content Include="tasarim\assets\icon\Simple-Line-Icons.svg" />
+    <Content Include="tasarim\assets\icon\themify-icons\fonts\themify.svg" />
+    <Content Include="tasarim\assets\icon\themify-icons\themify-icons.css" />
+    <Content Include="tasarim\assets\images\auth\logo-dark.png" />
+    <Content Include="tasarim\assets\images\auth\Logo-small-bottom.png" />
+    <Content Include="tasarim\assets\images\auth\logo.png" />
+    <Content Include="tasarim\assets\images\avatar-1.jpg" />
+    <Content Include="tasarim\assets\images\avatar-2.jpg" />
+    <Content Include="tasarim\assets\images\avatar-3.jpg" />
+    <Content Include="tasarim\assets\images\avatar-4.jpg" />
+    <Content Include="tasarim\assets\images\avatar-5.jpg" />
+    <Content Include="tasarim\assets\images\breadcrumb-bg.jpg" />
+    <Content Include="tasarim\assets\images\browser\chrome.png" />
+    <Content Include="tasarim\assets\images\browser\firefox.png" />
+    <Content Include="tasarim\assets\images\browser\ie.png" />
+    <Content Include="tasarim\assets\images\browser\opera.png" />
+    <Content Include="tasarim\assets\images\browser\safari.png" />
+    <Content Include="tasarim\assets\images\favicon.ico" />
+    <Content Include="tasarim\assets\images\logo-blue.png" />
+    <Content Include="tasarim\assets\images\logo.png" />
+    <Content Include="tasarim\assets\images\mega-menu\01.jpg" />
+    <Content Include="tasarim\assets\images\mega-menu\02.jpg" />
+    <Content Include="tasarim\assets\images\mega-menu\03.jpg" />
+    <Content Include="tasarim\assets\images\select-arrow.png" />
+    <Content Include="tasarim\assets\images\user-bg.jpg" />
+    <Content Include="tasarim\assets\images\widget\AUSTRALIA.jpg" />
+    <Content Include="tasarim\assets\images\widget\BRAZIL.jpg" />
+    <Content Include="tasarim\assets\images\widget\DIGITALPEN.jpg" />
+    <Content Include="tasarim\assets\images\widget\GERMANY.jpg" />
+    <Content Include="tasarim\assets\images\widget\IPAD.jpg" />
+    <Content Include="tasarim\assets\images\widget\PHONE1.jpg" />
+    <Content Include="tasarim\assets\images\widget\PHONE2.jpg" />
+    <Content Include="tasarim\assets\images\widget\PHONE3.jpg" />
+    <Content Include="tasarim\assets\images\widget\PHONE4.jpg" />
+    <Content Include="tasarim\assets\images\widget\prod1.jpg" />
+    <Content Include="tasarim\assets\images\widget\prod2.jpg" />
+    <Content Include="tasarim\assets\images\widget\prod3.jpg" />
+    <Content Include="tasarim\assets\images\widget\prod4.jpg" />
+    <Content Include="tasarim\assets\images\widget\TABLET.jpg" />
+    <Content Include="tasarim\assets\images\widget\UK.jpg" />
+    <Content Include="tasarim\assets\images\widget\USA.jpg" />
+    <Content Include="tasarim\assets\images\widget\wather2bottom.png" />
+    <Content Include="tasarim\assets\images\widget\wather2m.png" />
+    <Content Include="tasarim\assets\images\widget\wather2star1.png" />
+    <Content Include="tasarim\assets\images\widget\wather2star2.png" />
+    <Content Include="tasarim\assets\images\widget\watherbottom.png" />
+    <Content Include="tasarim\assets\images\widget\wathernature.png" />
+    <Content Include="tasarim\assets\images\widget\watherstar1.png" />
+    <Content Include="tasarim\assets\images\widget\watherstar2.png" />
+    <Content Include="tasarim\assets\images\widget\wsm-3-star-1.png" />
+    <Content Include="tasarim\assets\images\widget\wsm-3-star-2.png" />
+    <Content Include="tasarim\assets\js\animation.js" />
+    <Content Include="tasarim\assets\js\bootstrap-growl.min.js" />
+    <Content Include="tasarim\assets\js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="tasarim\assets\js\classie.js" />
+    <Content Include="tasarim\assets\js\color-json-common-page.js" />
+    <Content Include="tasarim\assets\js\common-pages.js" />
+    <Content Include="tasarim\assets\js\common-pages.min.js" />
+    <Content Include="tasarim\assets\js\counter.js" />
+    <Content Include="tasarim\assets\js\float\curvedLines.js" />
+    <Content Include="tasarim\assets\js\float\jquery.flot.categories.js" />
+    <Content Include="tasarim\assets\js\float\jquery.flot.js" />
+    <Content Include="tasarim\assets\js\float\jquery.flot.pie.js" />
+    <Content Include="tasarim\assets\js\float\jquery.flot.tooltip.min.js" />
+    <Content Include="tasarim\assets\js\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="tasarim\assets\js\jquery-ui\jquery-ui.min.js" />
+    <Content Include="tasarim\assets\js\jquery.easypiechart.min.js" />
+    <Content Include="tasarim\assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="tasarim\assets\js\jquery.mousewheel.min.js" />
+    <Content Include="tasarim\assets\js\jquery.quicksearch.js" />
+    <Content Include="tasarim\assets\js\jquery\jquery.min.js" />
+    <Content Include="tasarim\assets\js\modal.js" />
+    <Content Include="tasarim\assets\js\modalEffects.js" />
+    <Content Include="tasarim\assets\js\modernizr\css-scrollbars.js" />
+    <Content Include="tasarim\assets\js\modernizr\modernizr.js" />
+    <Content Include="tasarim\assets\js\morris.js\morris.js" />
+    <Content Include="tasarim\assets\js\owl-custom.js" />
+    <Content Include="tasarim\assets\js\pcoded.min.js" />
+    <Content Include="tasarim\assets\js\popper.js\popper.min.js" />
+    <Content Include="tasarim\assets\js\raphael\raphael.min.js" />
+    <Content Include="tasarim\assets\js\rating.js" />
+    <Content Include="tasarim\assets\js\script.js" />
+    <Content Include="tasarim\assets\js\script.min.js" />
+    <Content Include="tasarim\assets\js\SmoothScroll.js" />
+    <Content Include="tasarim\assets\js\swiper-custom.js" />
+    <Content Include="tasarim\assets\js\vertical\horizontal-layout.min.js" />
+    <Content Include="tasarim\assets\js\vertical\menu\box-layout.js" />
+    <Content Include="tasarim\assets\js\vertical\menu\menu-compact.js" />
+    <Content Include="tasarim\assets\js\vertical\menu\menu-header-fixed.js" />
+    <Content Include="tasarim\assets\js\vertical\menu\menu-hori-fixed.js" />
+    <Content Include="tasarim\assets\js\vertical\menu\menu-rtl.js" />
+    <Content Include="tasarim\assets\js\vertical\menu\menu-sidebar-fixed.js" />
+    <Content Include="tasarim\assets\js\vertical\menu\menu-static.js" />
+    <Content Include="tasarim\assets\js\vertical\vertical-layout.js" />
+    <Content Include="tasarim\assets\js\vertical\vertical-layout.min.js" />
+    <Content Include="tasarim\assets\pages\accordion\accordion.js" />
+    <Content Include="tasarim\assets\pages\accordion\accordion.min.js" />
+    <Content Include="tasarim\assets\pages\chart\morris\morris-custom-chart.js" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\css\amchart.css" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\css\export.css" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\js\amcharts.js" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\js\custom-amchart.js" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\js\export.min.js" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\js\images\dragIconRoundBig.svg" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\js\images\dragIconRoundBigH.svg" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\js\light.js" />
+    <Content Include="tasarim\assets\pages\dashboard\amchart\js\serial.js" />
+    <Content Include="tasarim\assets\pages\dashboard\custom-dashboard.js" />
+    <Content Include="tasarim\assets\pages\dashboard\custom-dashboard.min.js" />
+    <Content Include="tasarim\assets\pages\google-maps\gmaps.js" />
+    <Content Include="tasarim\assets\pages\google-maps\google-maps.js" />
+    <Content Include="tasarim\assets\pages\icon-modal.js" />
+    <Content Include="tasarim\assets\pages\notification\notification.css" />
+    <Content Include="tasarim\assets\pages\notification\notification.js" />
+    <Content Include="tasarim\assets\pages\todo\todo.js" />
+    <Content Include="tasarim\assets\pages\waves\css\waves.min.css" />
+    <Content Include="tasarim\assets\pages\waves\js\waves.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\amcharts.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\amcharts.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\ammap.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\ammap.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\continentsLow.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\continentsLow.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\export.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\gauge.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\gauge.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\images\dragIconRoundBig.svg" />
+    <Content Include="tasarim\assets\pages\widget\amchart\images\lens.svg" />
+    <Content Include="tasarim\assets\pages\widget\amchart\light.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\light.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\pie.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\pie.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\serial.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\serial.min.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\usaLow.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\worldLow.js" />
+    <Content Include="tasarim\assets\pages\widget\amchart\worldLow.min.js" />
+    <Content Include="tasarim\assets\pages\widget\excanvas.js" />
+    <Content Include="tasarim\auth-normal-sign-in.html" />
+    <Content Include="tasarim\auth-sign-up.html" />
+    <Content Include="tasarim\breadcrumb.html" />
+    <Content Include="tasarim\bs-basic-table.html" />
+    <Content Include="tasarim\button.html" />
+    <Content Include="tasarim\chart-morris.html" />
+    <Content Include="tasarim\color.html" />
+    <Content Include="tasarim\form-elements-component.html" />
+    <Content Include="tasarim\index.html" />
+    <Content Include="tasarim\label-badge.html" />
+    <Content Include="tasarim\map-google.html" />
+    <Content Include="tasarim\notification.html" />
+    <Content Include="tasarim\sample-page.html" />
+    <Content Include="tasarim\tabs.html" />
+    <Content Include="tasarim\tooltip.html" />
+    <Content Include="tasarim\typography.html" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="tasarim\assets\icon\CAW.TTF" />
+    <Content Include="tasarim\assets\icon\fa-brands-400.eot" />
+    <Content Include="tasarim\assets\icon\fa-brands-400.ttf" />
+    <Content Include="tasarim\assets\icon\fa-brands-400.woff" />
+    <Content Include="tasarim\assets\icon\fa-brands-400.woff2" />
+    <Content Include="tasarim\assets\icon\fa-regular-400.eot" />
+    <Content Include="tasarim\assets\icon\fa-regular-400.ttf" />
+    <Content Include="tasarim\assets\icon\fa-regular-400.woff" />
+    <Content Include="tasarim\assets\icon\fa-regular-400.woff2" />
+    <Content Include="tasarim\assets\icon\fa-solid-900.eot" />
+    <Content Include="tasarim\assets\icon\fa-solid-900.ttf" />
+    <Content Include="tasarim\assets\icon\fa-solid-900.woff" />
+    <Content Include="tasarim\assets\icon\fa-solid-900.woff2" />
+    <Content Include="tasarim\assets\icon\feather\fonts\feather.eot" />
+    <Content Include="tasarim\assets\icon\feather\fonts\feather.ttf" />
+    <Content Include="tasarim\assets\icon\feather\fonts\feather.woff" />
+    <Content Include="tasarim\assets\icon\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="tasarim\assets\icon\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="tasarim\assets\icon\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="tasarim\assets\icon\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="tasarim\assets\icon\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="tasarim\assets\icon\fontawesome-webfont.eot" />
+    <Content Include="tasarim\assets\icon\fontawesome-webfont.ttf" />
+    <Content Include="tasarim\assets\icon\fontawesome-webfont.woff" />
+    <Content Include="tasarim\assets\icon\fontawesome-webfont.woff2" />
+    <Content Include="tasarim\assets\icon\FontAwesome.otf" />
+    <Content Include="tasarim\assets\icon\icofont\fonts\icofont.eot" />
+    <Content Include="tasarim\assets\icon\icofont\fonts\icofont.ttf" />
+    <Content Include="tasarim\assets\icon\icofont\fonts\icofont.woff" />
+    <Content Include="tasarim\assets\icon\ionicons.eot" />
+    <Content Include="tasarim\assets\icon\ionicons.ttf" />
+    <Content Include="tasarim\assets\icon\ionicons.woff" />
+    <Content Include="tasarim\assets\icon\Linearicons-Free.eot" />
+    <Content Include="tasarim\assets\icon\Linearicons-Free.ttf" />
+    <Content Include="tasarim\assets\icon\Linearicons-Free.woff" />
+    <Content Include="tasarim\assets\icon\Linearicons-Free.woff2" />
+    <Content Include="tasarim\assets\icon\SEGOEUI.ttf" />
+    <Content Include="tasarim\assets\icon\SEGOEUIB.TTF" />
+    <Content Include="tasarim\assets\icon\segoeuii.ttf" />
+    <Content Include="tasarim\assets\icon\SEGOEUIZ.TTF" />
+    <Content Include="tasarim\assets\icon\Simple-Line-Icons.eot" />
+    <Content Include="tasarim\assets\icon\Simple-Line-Icons.ttf" />
+    <Content Include="tasarim\assets\icon\Simple-Line-Icons.woff" />
+    <Content Include="tasarim\assets\icon\Simple-Line-Icons.woff2" />
+    <Content Include="tasarim\assets\icon\themify-icons\fonts\themify.eot" />
+    <Content Include="tasarim\assets\icon\themify-icons\fonts\themify.ttf" />
+    <Content Include="tasarim\assets\icon\themify-icons\fonts\themify.woff" />
+    <Content Include="tasarim\assets\images\auth\Thumbs.db" />
+    <Content Include="tasarim\assets\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebAnketProj.Business\WebAnketApp.Business.csproj">
+      <Project>{6756B0DA-F644-44FD-A68D-9552B1DEB955}</Project>
+      <Name>WebAnketApp.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAnketProj.DataAccess\WebAnketApp.DataAccess.csproj">
+      <Project>{0760b601-bf23-4cd9-b7db-0bba9b942e89}</Project>
+      <Name>WebAnketApp.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61350</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44338/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

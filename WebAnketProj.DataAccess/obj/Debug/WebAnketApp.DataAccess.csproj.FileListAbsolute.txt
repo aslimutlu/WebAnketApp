@@ -1,0 +1,12 @@
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\bin\Debug\WebAnketApp.DataAccess.dll.config
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\bin\Debug\WebAnketApp.DataAccess.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\bin\Debug\WebAnketApp.DataAccess.pdb
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\obj\Debug\WebAnketApp.DataAccess.csprojAssemblyReference.cache
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\obj\Debug\WebAnketApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\obj\Debug\WebAnketApp.DataAccess.csproj.CopyComplete
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\obj\Debug\WebAnketApp.DataAccess.dll
+C:\Users\aslim\source\repos\WebAnketProj\WebAnketProj.DataAccess\obj\Debug\WebAnketApp.DataAccess.pdb
